@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Task-1</title>
+    </head>
+    <body>
+        <button class="date">show date</button>
+        <br />
+        <span class="resultdate"></span>
+        <br />
+        <br />
+        <button class="time">show time</button>
+        <br />
+        <span class="resulttime"></span>
+        <script>
+            document.querySelector(".date").addEventListener("click",Showdate);
+            function Showdate()
+            {
+                var d = new Date();
+                document.querySelector(".resultdate").innerHTML=d.getDate()+"/"+d.getMonth()+"/"+d.getFullYear();
+            }
+            document.querySelector(".time").addEventListener("click",Showtime);
+            function Showtime()
+            {
+                var t = new Date();
+                document.querySelector(".resulttime").innerHTML=t;
+            }
+        </script>
+    </body>
+</html>
